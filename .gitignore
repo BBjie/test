@@ -1,0 +1,11 @@
+# Python virtual environment
+venv/
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.dll
+*.lib
+
+# PyTorch and other large libraries
+Lib/site-packages/
