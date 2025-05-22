@@ -1,0 +1,69 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 循环节点
+  use_icon_as_answer_icon: false
+dependencies: []
+kind: app
+version: 0.1.5
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload: {}
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges: []
+    nodes:
+    - data:
+        break_conditions: []
+        desc: ''
+        logical_operator: and
+        loop_count: 10
+        start_node_id: 1743649837704start
+        title: 循环
+        type: loop
+      height: 148
+      id: '1743649837704'
+      position:
+        x: 382
+        y: 282
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 254
+      zIndex: 1
+    - data:
+        desc: ''
+        isInLoop: true
+        title: ''
+        type: loop-start
+      draggable: false
+      height: 48
+      id: 1743649837704start
+      parentId: '1743649837704'
+      position:
+        x: 24
+        y: 68
+      positionAbsolute:
+        x: 406
+        y: 350
+      selectable: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-loop-start
+      width: 44
+      zIndex: 1002
+    viewport:
+      x: -3
+      y: 1
+      zoom: 1

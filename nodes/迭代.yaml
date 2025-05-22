@@ -1,0 +1,65 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 迭代
+  use_icon_as_answer_icon: false
+dependencies: []
+kind: app
+version: 0.1.5
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload: {}
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges: []
+    nodes:
+    - data:
+        desc: ''
+        error_handle_mode: terminated
+        is_parallel: false
+        iterator_selector: []
+        output_selector: []
+        parallel_nums: 10
+        start_node_id: 1743649761730start
+        title: 迭代
+        type: iteration
+      id: '1743649761730'
+      position:
+        x: 384
+        y: 282
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      zIndex: 1
+    - data:
+        desc: ''
+        isInIteration: true
+        title: ''
+        type: iteration-start
+      draggable: false
+      height: 48
+      id: 1743649761730start
+      parentId: '1743649761730'
+      position:
+        x: 24
+        y: 68
+      positionAbsolute:
+        x: 408
+        y: 350
+      selectable: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-iteration-start
+      width: 44
+      zIndex: 1002

@@ -1,0 +1,39 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 变量赋值
+  use_icon_as_answer_icon: false
+dependencies: []
+kind: app
+version: 0.1.5
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload: {}
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges: []
+    nodes:
+    - data:
+        desc: ''
+        items: []
+        title: 变量赋值
+        type: assigner
+        version: '2'
+      id: '1743649931923'
+      position:
+        x: 382
+        y: 282
+      sourcePosition: right
+      targetPosition: left
+      type: custom

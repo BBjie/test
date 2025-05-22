@@ -1,0 +1,49 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 知识检索
+  use_icon_as_answer_icon: false
+dependencies: []
+kind: app
+version: 0.1.5
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload: {}
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges: []
+    nodes:
+    - data:
+        dataset_ids: []
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: false
+          top_k: 4
+        query_variable_selector: []
+        retrieval_mode: multiple
+        title: 知识检索
+        type: knowledge-retrieval
+      height: 54
+      id: '1743649628395'
+      position:
+        x: 384
+        y: 282
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: -3
+      y: 1
+      zoom: 1
